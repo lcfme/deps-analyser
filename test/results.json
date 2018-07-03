@@ -1,0 +1,40 @@
+{
+	"/Users/lcfme/Desktop/deps-analyser/test/c.js": {
+		"exports": 1,
+		"id": "/Users/lcfme/Desktop/deps-analyser/test/c.js",
+		"deps": []
+	},
+	"/Users/lcfme/Desktop/deps-analyser/test/b.js": {
+		"exports": 2,
+		"id": "/Users/lcfme/Desktop/deps-analyser/test/b.js",
+		"deps": [{
+			"exports": 1,
+			"id": "/Users/lcfme/Desktop/deps-analyser/test/c.js",
+			"deps": []
+		}]
+	},
+	"/Users/lcfme/Desktop/deps-analyser/test/d.js": {
+		"exports": 4,
+		"id": "/Users/lcfme/Desktop/deps-analyser/test/d.js",
+		"deps": []
+	},
+	"./test/a.js": {
+		"exports": {
+			"msg": "ok"
+		},
+		"id": "./test/a.js",
+		"deps": [{
+			"exports": 2,
+			"id": "/Users/lcfme/Desktop/deps-analyser/test/b.js",
+			"deps": [{
+				"exports": 1,
+				"id": "/Users/lcfme/Desktop/deps-analyser/test/c.js",
+				"deps": []
+			}]
+		}, {
+			"exports": 4,
+			"id": "/Users/lcfme/Desktop/deps-analyser/test/d.js",
+			"deps": []
+		}]
+	}
+}
