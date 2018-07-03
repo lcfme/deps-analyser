@@ -1,0 +1,20 @@
+{
+  "name": "deps-analyser",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcfme/deps-analyser.git"
+  },
+  "keywords": ["deps-analyser"],
+  "author": "Liu Chaofan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcfme/deps-analyser/issues"
+  },
+  "homepage": "https://github.com/lcfme/deps-analyser#readme"
+}
