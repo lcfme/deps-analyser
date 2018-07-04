@@ -20,7 +20,7 @@ function __loader__(entryFile) {
             parentModule = requireStack[requireStack.length - 1];
         id = parentModule
             ? path.resolve(path.dirname(parentModule.id), id)
-            : entryFile;
+            : path.resolve(baseDir, id);
         id = /\.js/.test(id) ? id : id + '.js';
         if (rootModule[id]) {
             return rootModule[id].exports;
