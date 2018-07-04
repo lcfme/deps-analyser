@@ -1,9 +1,13 @@
 var path = require('path');
 var readFile = require('./readFile');
+var cwd = process.cwd();
 
 module.exports = __loader__;
 
 function __loader__(entryFile) {
+    entryFile = path.isAbsolute(entryFile)
+        ? entryFile
+        : path.resolve(cwd, entryFile);
     entryFile = /\.js$/.test(entryFile) ? entryFile : entryFile + '.js';
     var rootModule = {},
         requireStack = [],
